@@ -1,0 +1,599 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*
+font-family: 'Noto Serif', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/*DISEÑO MOBILE FIRST*/
+
+/*PROPIEDADES COMUNES*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+	font-family: 'Noto Serif', serif;
+    line-height: 1.5em;
+    background-color: rgb(232,232,232);
+    font-size: 18px;
+    }
+
+/*CSS PARA ENLACES*/
+a{
+    /*Le quito la linea inferior a todos los enlaces*/
+    text-decoration: none;
+    color: rgb(28,28,28);
+}
+a:hover{
+    color:rgba(28,28,28,0.5); 
+}
+/*
+header a.menu{
+    font-weight: bold;
+    color: rgb(28,28,28);
+}
+
+header a.menu:hover{
+    color:rgba(28,28,28,0.5);
+}
+*/
+
+footer a{
+    color: rgb(255,255,255);
+}
+footer a:hover{
+    color: rgb(155,23,0);
+}
+
+.enlace_rojo{
+    color: rgb(155,23,0);
+}
+.activo{
+    font-style: italic;
+}
+.enlace_pelicula{
+    text-align: left;
+}
+
+.enlace_pelicula:hover{
+    box-shadow: 0px 0px 14px -2px rgb(155,23,0);
+    text-align: left;
+}
+/* CSS PARA LA CABECERA DE LA PÁGINA */
+/*HEADER*/
+header{
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ESTILOS REFERENTES AL BOTON DE INICIO DE SESION y DEL FORMULARIO */
+#inicioSesion{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#botonInicioSesion, #registrarse{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(155,23,0);
+    color: rgb(255,255,255);
+    border: none;
+}
+#botonInicioSesion:hover, #registrarse:hover{
+    color: rgb(28,28,28);
+}
+/* --------------------------------------------- */
+
+/* ESTILOS REFERENTES AL LOGO */
+#logo{
+    display: flex;
+    /*
+    Se puede comentar esta propiedad al ser la opción por defecto
+    flex-direction: row;
+    */
+    padding: 10px;
+    align-items: center;
+}
+
+#logo img{
+    display: inline;
+    margin-right: 15px;
+}
+
+/*Clases para dar formato al logo OscarsClub*/
+span.oscar{
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+span.club{
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(155,23,0);
+}
+/* --------------------------------------------- */
+
+/* ESTILOS REFERENTES AL MENU DE NAVEGACION */
+header  nav{
+    text-align: center;
+    }
+
+header ul, header li{
+    margin: 15px 0px;
+    padding: 0;
+    list-style: none;
+}
+header nav a {
+	color: rgb(28,28,28);
+    text-decoration: none;
+    font-weight: 700;
+}
+/* END CSS CABECERA */
+
+/* CSS PIE DE LA PAGINA */
+footer{
+    margin: 0;
+    margin-top: 50px;
+    background-color: rgb(67,58,68);
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255,255,255);
+    text-align: center;
+    font-size:0.8rem;
+    line-height: 1.2rem;
+}
+
+#avisolegal{
+    padding-top: 30px;
+}
+
+#rrss{
+    padding-top: 25px;
+}
+
+#autor {
+    padding-top: 20px;
+}
+
+#arriba{
+    text-align: right;
+}
+#arriba span{
+    font-size: 2rem;
+    padding: 5px;
+}
+
+footer ul, footer li{
+    padding: 0;
+    list-style: none;
+}
+
+/* END CSS PIE */
+
+/*PAGINA INDEX.HTML*/
+
+main{
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.h_titulo{
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+.p_titulo{
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0;
+}
+#index_descripcion{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#index_secciones{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#index_definicion, #index_funciona{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#index_unete{
+    width: 100%;
+    text-align: left;
+    padding-bottom: 50px;
+}
+#index_container_publicidad{
+    width: 100%;
+}
+#index_publicidad, #index_formulario{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.imagen{
+    width: 50vw;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    margin-bottom: 20px;
+}
+.index_politicas{
+    font-size: 0.6rem;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+.block{
+    display: block;
+}
+
+/* ------------------------------------ */
+
+/*PAGINA CLUBES-TEMATICOS.HTML*/
+
+.club_pelicula{
+    margin: 0;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.fill{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.club_titulo_pelicula{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.punto_rojo{
+    color: rgb(155,23,0);
+    padding-right: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.punto_rojo::before{
+    content: "···";
+}
+
+.club_id_pelicula{
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* ------------------------------------ */
+
+/*PAGINA SESIONES-2020.HTML*/
+/* ------------------------------------ */
+.sesiones_parrafos{
+    font-size: 0.8rem;
+}
+
+#sesiones_enlaces_aside{
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+}
+
+
+.sesiones_contenedor_peliculas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sesiones_film{
+    width: 70%;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 14px -2px #333333;
+    margin: 15px 0;
+    padding: 0px;
+    background-color: white;
+}
+
+.sesiones_film img{
+    width: 100%;
+    height: auto;
+}
+
+cite.sesion_cite{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(155,23,0);
+    text-align: left;
+    font-size: 0.7em;
+    padding: 5px;
+    font-weight: 700;
+    font-style: normal;
+}
+/* ------------------------------------ */
+
+/*PAGINA SESIONES-2020.HTML*/
+/* ------------------------------------ */
+
+#titulo_detalle{
+    margin:40px 0;
+}
+#detalle_ariadna{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#detalle_ariadna ul li{
+    list-style: none;
+    display: inline;
+}
+#detalle_ariadna li:after {
+    content: "/";
+    margin: 0 10px;
+}
+#detalle_ariadna li:last-child::after {
+    display: none;
+}
+.klaus{
+    color:rgba(28,28,28,0.5); 
+}
+
+.detalle_seccion_ficha{
+    border-bottom: 1px solid black;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+dt{
+    margin-top: 20px;
+}
+dd{
+    font-size: 0.9em;
+    margin-inline-start: 20px;
+}
+
+#detalle_sobre_obra p{
+    font-size: 0.9em;
+}
+
+img#img_sergio{
+    float: left;
+    margin: 5px;
+    border-radius: 50%;
+    shape-outside: circle();
+}
+
+div.contenedor_video{
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 62.5%; /* 16:10 -> 10/16 = 0.625 -> 0.625*100 = 62.5*/
+    margin: 0;
+    }
+    
+iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    }
+
+
+.detalle_primeraletra{
+    display: inline-block;
+    font-size: 0.6rem;
+    font-style: italic;
+    margin: 0;
+}
+.detalle_primeraletra::first-letter{
+    font-size: 1.2rem;
+}
+/* ------------------------------------ */
+/* DEFINICION PARA PANTALLAS NO MOVILES */
+/* ------------------------------------ */
+
+@media screen and (min-width: 576px){
+    /*
+    Estas reglas se aplicarán cuando el tamaño de ventana sea como mínimo 500px
+    */
+    body{
+        /*background-color: lawngreen;*/
+    }
+    /* CSS PARA LA CABECERA DE LA PÁGINA */
+    header{
+        margin: 10px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header > #logo{
+        order: 1;
+        margin: 0px;
+        padding: 0px;
+    }
+    header > nav {
+        order:2;
+    }
+    header > #inicioSesion{
+        order:3;
+    }
+  
+    header nav ul li{
+        display: inline;
+        margin-right: 20px;
+    }
+    header nav ul li:last-child{
+        display: inline;
+        margin-right: 0px;
+    }
+    /* END CSS CABECERA */
+
+    /* CSS PIE DE LA PAGINA */
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+    #avisolegal{
+        text-align: left;
+    }
+    #avisolegal li{
+        display: inline;
+    }
+     #avisolegal li:after {
+        content: "·";
+        margin: 0 10px;
+    }
+    #avisolegal li:last-child::after {
+        display: none;
+    }
+
+    #rrss{
+        text-align: right;
+    }
+    #rrss li{
+        display: inline;
+    }
+     #rrss li:after {
+        content: "·";
+        margin: 0 10px;
+    }
+    #rrss li:last-child::after {
+        display: none;
+    }
+
+    #autor{
+        text-align: left;
+    }
+
+    #arriba{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        }
+    /* END CSS PIE */
+
+    /*PAGINA INDEX.HTML*/
+    main{
+        width: 100%;
+        padding: 20px 15vW;
+    }
+    #index_descripcion{
+        padding: 0 5vw;
+    }
+
+    #index_funciona_imagenes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        }
+    
+    figure{
+        margin: 0;
+        padding: 0;
+        width: 10vw;
+        text-align: center;
+    }
+    .imagen{
+        width: 100%;
+    }
+
+    #index_container_publicidad{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* ------------------------------------ */
+
+    /*PAGINA CLUBES-TEMATICOS.HTML*/
+    .punto_rojo::before{
+        content: "·····";
+    }
+
+    #ClubContenedorPeliculas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    /* ------------------------------------ */
+
+    /*PAGINA SESIONES-2020.HTML*/
+    /* ------------------------------------ */
+
+    .sesiones_parrafos{
+        padding: 0 50px;
+        font-size: 0.8rem;
+    }
+
+    #sesiones_contenido{
+        border-top: 3px dotted rgb(155,23,0);
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 30px;
+    }
+    
+    #sesiones_galardonados{
+        margin-top: 25px;
+    }
+
+    .margin_top{
+        margin-top: 25px;   
+    }
+    
+    .sesiones_contenedor_peliculas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: space-between;
+        
+    }
+    .sesiones_contenedor_peliculas article{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* ------------------------------------ */
+
+    /*PAGINA DETALLE-SESION.HTML*/
+    /* ------------------------------------ */
+    #container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 40% 1fr;
+        grid-gap: 50px;
+    }
+
+}
