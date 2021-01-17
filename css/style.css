@@ -580,12 +580,6 @@ iframe {
         justify-content: space-between;
         
     }
-    .sesiones_contenedor_peliculas div{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
 
     .sesiones_film{
         width: 30%;
