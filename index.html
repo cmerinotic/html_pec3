@@ -1,0 +1,117 @@
+<!DOCTYPE html >
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8" />
+    <title>OscarClub - Tu web de cine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Oscar Club. Clubs virtuales de cine para los amantes del cine"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="cabecera">
+        <!-- Elemento 1 de la cabecera-->
+        <div id="inicioSesion">
+            <a id="botonInicioSesion" href="#">Iniciar sesión</a>
+        </div>
+
+
+        <!-- Elemento 2 de la cabecera-->
+        <div id="logo">
+                <img src="img/oscarsclub-isologo.png" alt="Logo OscarClub">
+                <a href="index.html" class="menu_logo">
+                    <span class="oscar">oscars</span><span class="club">club</span>
+                </a>
+        </div>
+        
+        <!-- Elemento 3 de la cabecera-->
+        <nav>
+            <ul>
+                <li><a href="clubes-tematicos.html" class="menu">CLUBES TEMÁTICOS</a></li>
+                <li><a href="sesiones-2020.html" class="menu">SESIONES 2020</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="index_definicion">
+            <h2 class="h_titulo">¿Qué es Oscars Club?</h2>
+            <p id="index_descripcion">
+                Oscars Club organiza clubes virtuales de cine de diversos géneros y en diferentes lenguas, para los amantes del cine que quieran compartir reflexiones y debatir sobre las películas que les interesan sin necesidad de tener que ir a un espacio físico.
+            </p>
+        </section>        
+        
+        <section id="index_funciona">
+            <h2 class="h_titulo">¿Cómo funciona?</h2>
+            <div id="index_funciona_imagenes">
+                <figure>
+                    <img class="imagen" src="img/howto-register.png" alt="Regístrate">
+                    <figcaption>Regístrate</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/howto-club.png" alt="Inscribete en un club">
+                    <figcaption>Inscríbete en un club</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/howto-film.png" alt="Elige una película">
+                    <figcaption>Elige una película</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/howto-speech.png" alt="Disfruta del debate">
+                    <figcaption>Disfruta del debate</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="index_unete">
+            <h2 class="h_titulo">Únete al club</h2>
+            <div id="index_container_publicidad">
+            <!-- IZQUIERDA -->
+                    
+            <div id="index_publicidad">
+                <p class="p_titulo">Estamos mirando tu próxima película preferida. <br>¿Te lo vas a perder?</p>
+            </div>
+                <!-- DERECHA -->
+                <div id="index_formulario">
+                    <form method="GET" action="index.html">
+                        <input type="text" id="nombre" placeholder="Nombre" pattern="[a-zA-ZàáâèéêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛçÇ'-]{2,128}" class="input" required>
+                        <input type="text" id="email" placeholder="Correo electrónico" pattern="[a-zA-ZàáâèéêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛçÇ'-]{2,128}" class="input" required>
+                        <input type="password" id="Contraseña" placeholder="Contraseña" pattern="[a-zA-ZàáâèéêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛçÇ'-]{2,128}" class="input" required>
+                        <p class="index_politicas">
+                            INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>OSCARCLUB</strong>.<strong>Finalidades:</strong> recogida de datos para la inscripción como socio del interesado.<strong>Legitimación:</strong> Consentimiento del interesado. <strong>Destinatarios:</strong> No están previstas cesiones de datos a terceros, salvo obligación legal.  <strong>Derechos:</strong> Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:oscarsclub@oscarsclub.org">oscarsclub@oscarsclub.org</a>. <strong>Información Adicional:</strong> Puede ampliar la información en el enlace de <a href="#" class="enlace_rojo">Aviso Legal</a> y <a href="#" class="enlace_rojo">Política de privacidad</a>.
+                        </p>
+                        <label class="index_politicas block"><input type="checkbox" id="index_leido">He leido y acepto la política de privacidad</label>
+                        <input type="submit" id="registrarse" value="REGISTRARSE">                
+                    </form>
+                </div>
+        </div>
+        </section>
+   </main>
+
+    <footer>
+        <nav id="avisolegal">
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </nav>
+
+        <nav id="rrss">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </nav>
+
+        <nav id="autor">
+            <ul>
+                <li>&copy; 2020  Carlos Merino Díaz</li>
+                <li>Iconos <a href="https://flaticon.com" target="_blank">flaticon.com</a></li>
+                <li>Imágenes <a href="https://unsplash.com" target="_blank">unsplash.com</a></li>
+            </ul>
+        </nav>
+        <div id="arriba"><a href="#cabecera"><span>&xwedge;</span></a></div>
+    </footer>
+</body>
+</html>
